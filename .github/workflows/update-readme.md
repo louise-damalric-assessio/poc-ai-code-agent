@@ -1,8 +1,17 @@
 ---
 name: AI update README
 description: Make a small test change to the README and open a pull request
+
 on:
   workflow_dispatch:
+
+permissions:
+  contents: read
+  copilot-requests: write
+
+engine:
+  id: copilot
+  model: gpt-5
 
 safe-outputs:
   create-pull-request:
