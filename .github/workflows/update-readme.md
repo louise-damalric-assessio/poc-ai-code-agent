@@ -1,6 +1,6 @@
 ---
 name: AI update README
-description: Make a small test change to the README and open a pull request
+description: Make a small test change to the README and open a pull request please
 
 on:
   workflow_dispatch:
@@ -11,7 +11,7 @@ permissions:
 
 engine:
   id: copilot
-  model: gpt-5
+  model: claude-opus-5
 
 safe-outputs:
   create-pull-request:
